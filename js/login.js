@@ -13,5 +13,8 @@ function validaCampo(){
     //Verificando se a senha é PAR:
  
     console.log(valorCampo % 2 == 0);
+    //Simulação de Hash
+    const valorHash = valorCampo ** 2;
+    console.log(valorHash)
  
 }
