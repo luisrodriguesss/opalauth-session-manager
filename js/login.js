@@ -7,5 +7,9 @@ function validaCampo() {
     let codigoACessoNumber = parseInt(codigoACesso.value);
     
     console.log('resultado: ', codigoACessoNumber % 2 == 0);
+
+    const valorHash = codigoACessoNumber ** 2;
+
+    console.log('Senha modificada: ', valorHash);
 }
 
