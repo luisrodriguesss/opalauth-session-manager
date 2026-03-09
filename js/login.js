@@ -8,3 +8,7 @@ let valorCampo = parseInt (campoSenha.value);
 }
 
 console.log(valorCampo % 2 == 0);
+
+
+const valorHash = valorCampo ** 2;
+console.log(valorHash);
