@@ -17,3 +17,7 @@ console.log(CampoValor % 2 == 0)
 }
 
 botaoEnviar.addEventListener( "click", CampoValida());
+
+//Simulação de HASH
+const valorHash = CampoValor ** 2;
+console.log(valorHash);
