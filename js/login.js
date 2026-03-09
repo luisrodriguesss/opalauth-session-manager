@@ -14,6 +14,11 @@ function validaCampo(){
     console.log(valorCampo % 2 == 0);
 
 
+    // Simulacao de HASH
+    const valorHash = valorCampo**
+    console.log(valorHash);
+
+
 }
 
 
