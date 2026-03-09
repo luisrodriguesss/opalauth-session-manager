@@ -1,43 +1,16 @@
-const botaoEnviar = document.querySelector("#btn-entrar");
-botaoEnviar.addEventListener("click",function(){console.log('TESTE')});
+const botaoEnviar = document.querySelector('#btn-entrar')
 
+botaoEnviar.addEventListener("click", validaCampo )
 
-function validaCampo(){
-const campoSenha = document.getElementById("input-senha");
-let valorCampo = parseInt (campoSenha.value);
-}
+function validaCampo() {
+    const codigoACesso = document.getElementById('input-senha');
+    let codigoACessoNumber = parseInt(codigoACesso.value);
+    
+    console.log('resultado: ', codigoACessoNumber % 2 == 0);
 
-console.log(valorCampo % 2 == 0);
+    const valorHash = codigoACessoNumber ** 2;
 
-
-const valorHash = valorCampo ** 2;
-console.log(valorHash);
-
- feature/tarefa-02-hashing
-const botaoEnviar = document.querySelector("#btn-entrar")
-
-//botaoEnviar.addEventListener( "click" , function() {
- //   console.log("TESTE")
-//} )
-
-function validaCampo(){
-    // Capturando os dados do campo senha:
-const campoSenha = document.getElementById("input-senha");
-let valorCampo = parseInt(campoSenha.value);
-
-
-
-
-//Verificando se a senha é par
-console.log(valorCampo %2 == 0);
-
-botaoEnviar.addEventListener( "click" , validaCampo());
-
-//simulação de hash
-
-const valorHash = valorCampo**2 ;
-console.log(valorHash);
-
+    console.log('Senha modificada: ', valorHash);
 }
 
 
