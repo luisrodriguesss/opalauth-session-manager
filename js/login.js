@@ -1,3 +1,26 @@
+
+
+const botaoEnviar = document.querySelector("#btn-entrar");
+
+//botaoEnviar.addEventListener("click", function(){
+//  console.log("Teste")
+//});
+
+
+function validaCampo(){
+// Capturando os dados do campo SENHA:
+const campoSenha = document.getElementById("Input-senha");
+let valorCampo = parseInt (campoSenha.value)
+
+// Verificando se a senha é PAR
+console.log(valorCampo % 2 == 0);
+
+// Simulação de HASH
+
+const valorHash = valorCampo**2;
+console.log(valorHash);
+}
+
 const botaoEnviar = document.querySelector("#btn-entrar");
 botaoEnviar.addEventListener("click",function(){console.log('TESTE')});
 
@@ -62,7 +85,7 @@ function validaCampo() {
     // Verificando se a senha é PAR:
     console.log(valorCampo % 2 === 0);
 }
-=======
+
 // Capturando os dados do campo SENHA:
 
 
@@ -88,3 +111,4 @@ function validaCampo(){
 
 
  develop
+
