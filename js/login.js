@@ -3,6 +3,8 @@
 let nomeUsuario = "opalAuth";
 let tentativasLogin = 3;
 
+
+
 console.log(`Bem-vindo, ${nomeUsuario}! Você tem ${tentativasLogin} tentativas de login restantes.`);
 
 const botaoEnviar = document.querySelector("#btn-entrar");
@@ -27,11 +29,13 @@ function validaCampo() {
 // Capturando os dados do campo SENHA:
 
 
+
 const botaoEnviar = document.querySelector("#btn-entrar");
 
 botaoEnviar.addEventListener("click", validaCampo);
 
 function validaCampo() {
+
     const campoSenha = document.getElementById("input-senha");
     let valorCampo = parseInt(campoSenha.value);
 
@@ -41,7 +45,7 @@ function validaCampo() {
 
     // Simulacao de HASH
     const valorHash = valorCampo ** 2
-        console.log(valorHash);
+    console.log(valorHash);
 
 
 }
@@ -50,4 +54,22 @@ function validaCampo() {
 
 
 
+
+// Capturando os dados do campo SENHA:
+const campoSenha = document.getElementById("input-senha");
+const valorCampo = Number(campoSenha.value);
+
+// Verifica se o valor é um número válido antes de prosseguir
+if (Number.isNaN(valorCampo)) {
+    console.log("Valor de senha inválido.");
+    return;
+}
+
+// Verificando se a senha é PAR:
+console.log("resultado: ", valorCampo % 2 === 0);
+
+// Simulação de HASH:
+const valorHash = valorCampo ** 2;
+console.log("Senha modificada: ", valorHash);
+}
 
