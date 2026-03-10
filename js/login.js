@@ -20,3 +20,8 @@ function validaCampo() {
   const valorHash = valorCampo ** 2;
   console.log("Senha modificada: ", valorHash);
 }
+
+const nomeUsuario = "Kenji";
+let tentativasLogin = 0;
+
+console.log(`Sistema OpalAuth iniciado para o usuário: ${nomeUsuario}`);
