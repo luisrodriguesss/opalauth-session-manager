@@ -11,18 +11,10 @@ botaoEnviar.addEventListener("click", validaCampo);
 
 // Capturando os dados do campo SENHA:
 function validaCampo(){
-    //Capturando os dados do campo SENHA:
     const campoSenha = document.getElementById("input-senha");
-    const valorCampo = Number(campoSenha.value);
-     
-    //Verifica se o valor é um número válido antes de prosseguir
-    if(Number.isNaN(valorCampo)){
-        console.log9("Valor de senha inválido.");
-        return;
-    }
-
+    let valorCampo = parseInt(campoSenha.value);
+ 
     //Verificando se a senha é PAR:
-    console.log("resultado:", valorCampo % 2 == 0);
  
     //Simulação de HASH:
     const valorHash = valorCampo **2;
